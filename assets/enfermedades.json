@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "nombre": "Picadura de Zancudo / Mosquito",
+    "descripcion": "Reacción local común a la picadura de un insecto volador. Produce un bulto rojo que genera mucha picazón.",
+    "sintomas": ["picazon", "bulto_rojo"],
+    "consejo": "Aplica una compresa fría y evita rascarte para prevenir infecciones."
+  },
+  {
+    "id": "2",
+    "nombre": "Alergia por Contacto (Dermatitis)",
+    "descripcion": "Erupción cutánea provocada por el contacto directo con una sustancia extraña como plantas, jabones o perfumes.",
+    "sintomas": ["picazon", "enrojecimiento", "descamacion"],
+    "consejo": "Identifica qué causó la reacción y lava la zona con abundante agua y jabón neutro."
+  },
+  {
+    "id": "3",
+    "nombre": "Quemadura Solar",
+    "descripcion": "Daño en la piel causado por la exposición prolongada a los rayos ultravioleta (UV) del sol sin protección adecuada.",
+    "sintomas": ["ardor", "enrojecimiento", "piel_caliente"],
+    "consejo": "Hidrata muy bien la piel con gel de aloe vera y bebe mucha agua. No te expongas más al sol."
+  },
+  {
+    "id": "4",
+    "nombre": "Urticaria",
+    "descripcion": "Ronchas rojizas, elevadas y con mucha picazón que aparecen en la piel, a menudo desencadenadas por una reacción alérgica alimentaria o por estrés.",
+    "sintomas": ["picazon", "ronchas_elevadas", "enrojecimiento"],
+    "consejo": "Mantén la zona fresca. Si las ronchas dificultan la respiración, acude de inmediato a un centro asistencial."
+  }
+]

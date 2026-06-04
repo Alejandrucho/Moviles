@@ -1,13 +1,14 @@
-import { SymbolView } from 'expo-symbols';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
-import { Platform, Pressable } from 'react-native';
+import { Pressable } from 'react-native';
 
 import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
+  // Solución al error null/undefined: si es null, por defecto usa el modo 'light'
+  const colorScheme = useColorScheme() ?? 'light';
 
   return (
     <Tabs
@@ -20,26 +21,18 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
+          title: 'Cuestionario', // Nombre de la primera pestaña
           tabBarIcon: ({ color }) => (
-            <SymbolView
-              name={{
-                ios: 'chevron.left.forwardslash.chevron.right',
-                android: 'code',
-                web: 'code',
-              }}
-              tintColor={color}
-              size={28}
-            />
+            <FontAwesome name="list-alt" size={24} color={color} />
           ),
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable style={{ marginRight: 15 }}>
                 {({ pressed }) => (
-                  <SymbolView
-                    name={{ ios: 'info.circle', android: 'info', web: 'info' }}
-                    size={25}
-                    tintColor={Colors[colorScheme].text}
+                  <FontAwesome
+                    name="question-circle"
+                    size={24}
+                    color={Colors[colorScheme].text}
                     style={{ opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
@@ -51,17 +44,9 @@ export default function TabLayout() {
       <Tabs.Screen
         name="two"
         options={{
-          title: 'Tab Two',
+          title: 'Historial', // Nombre de la segunda pestaña
           tabBarIcon: ({ color }) => (
-            <SymbolView
-              name={{
-                ios: 'chevron.left.forwardslash.chevron.right',
-                android: 'code',
-                web: 'code',
-              }}
-              tintColor={color}
-              size={28}
-            />
+            <FontAwesome name="history" size={24} color={color} />
           ),
         }}
       />
