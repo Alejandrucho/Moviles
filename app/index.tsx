@@ -1,21 +1,7 @@
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { router } from 'expo-router';
-import { useFonts } from 'expo-font';
 
 export default function Home() {
-  const [fontsLoaded, fontError] = useFonts({
-    'TituloDermaWiki': require('../assets/fonts/Phenomena-Black.ttf'), 
-    // Carga la fuente desde assets/fonts/
-  });
-
-  if (!fontsLoaded && !fontError) {
-    return (
-      <View style={styles.container}>
-        <ActivityIndicator size="large" color="#3498db" />
-      </View>
-    );
-  } //Placeholder mientras se cargan las fuentes
-
   return (
     <View style={styles.container}>
       {/* Descomenta este bloque cuando tengas tu imagen lista en la carpeta assets.
@@ -60,9 +46,8 @@ const styles = StyleSheet.create({
     marginBottom: 10 
   },
   title: { 
-    fontFamily: 'TituloDermaWiki',
-    fontSize: 36, 
-    fontWeight: 'normal',
+    fontSize: 28, 
+    fontWeight: 'bold', 
     marginBottom: 40,
     color: '#333'
   },

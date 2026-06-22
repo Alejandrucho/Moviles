@@ -26,5 +26,110 @@
     "descripcion": "Ronchas rojizas, elevadas y con mucha picazón que aparecen en la piel, a menudo desencadenadas por una reacción alérgica alimentaria o por estrés.",
     "sintomas": ["picazon", "ronchas_elevadas", "enrojecimiento"],
     "consejo": "Mantén la zona fresca. Si las ronchas dificultan la respiración, acude de inmediato a un centro asistencial."
+  },
+  {
+    "id": "5",
+    "nombre": "Dermatitis Atópica",
+    "descripcion": "Trastorno crónico que provoca enrojecimiento y picazón constante en la piel, muy común en niños y personas con antecedentes de alergias.",
+    "sintomas": ["picazon", "piel_seca", "enrojecimiento", "descamacion"],
+    "consejo": "Mantén la piel hidratada con cremas emolientes sin perfume y evita duchas con agua muy caliente."
+  },
+  {
+    "id": "6",
+    "nombre": "Psoriasis",
+    "descripcion": "Enfermedad autoinmune que acelera el ciclo de vida de las células de la piel, formando escamas y manchas rojas que causan comezón e incluso dolor.",
+    "sintomas": ["placas_rojas", "escamas", "picazon", "dolor"],
+    "consejo": "Aplica cremas humectantes espesas, expón la zona al sol moderado (con precaución) y consulta a un dermatólogo."
+  },
+  {
+    "id": "7",
+    "nombre": "Rosácea",
+    "descripcion": "Afección común que causa enrojecimiento y vasos sanguíneos visibles en la cara. Puede producir también pequeños bultos llenos de pus.",
+    "sintomas": ["enrojecimiento_facial", "granos", "ardor", "piel_caliente"],
+    "consejo": "Evita desencadenantes como comidas muy picantes, alcohol, estrés y cambios bruscos de temperatura. Usa protector solar diario."
+  },
+  {
+    "id": "8",
+    "nombre": "Vitíligo",
+    "descripcion": "Enfermedad que causa la pérdida de color en la piel en forma de manchas, debido a la muerte o mal funcionamiento de las células que producen melanina.",
+    "sintomas": ["manchas_blancas", "sensibilidad_sol"],
+    "consejo": "Protege las zonas despigmentadas con bloqueador solar de factor alto, ya que son extremadamente sensibles a las quemaduras."
+  },
+  {
+    "id": "9",
+    "nombre": "Melasma",
+    "descripcion": "Aparición de manchas oscuras en la piel, generalmente en el rostro. Es muy común durante el embarazo o por cambios hormonales.",
+    "sintomas": ["manchas_oscuras", "hiperpigmentacion"],
+    "consejo": "El uso estricto de protector solar y sombreros es fundamental, ya que el sol empeora significativamente las manchas."
+  },
+  {
+    "id": "10",
+    "nombre": "Tiña Corporal",
+    "descripcion": "Infección fúngica (por hongos) altamente contagiosa que aparece como un sarpullido circular rojo y con picazón.",
+    "sintomas": ["manchas_circulares", "picazon", "descamacion"],
+    "consejo": "Aplica una crema antimicótica de venta libre y mantén la zona limpia y seca. No compartas toallas ni ropa."
+  },
+  {
+    "id": "11",
+    "nombre": "Candidiasis Cutánea",
+    "descripcion": "Infección por el hongo Candida que suele desarrollarse en zonas del cuerpo cálidas, húmedas y con pliegues, como las axilas o ingles.",
+    "sintomas": ["enrojecimiento", "picazon", "secrecion_blanca", "ardor"],
+    "consejo": "Usa ropa holgada de algodón para permitir que la piel respire y mantén los pliegues de la piel completamente secos."
+  },
+  {
+    "id": "12",
+    "nombre": "Herpes Zóster",
+    "descripcion": "Reactivación del virus de la varicela que causa un sarpullido muy doloroso, generalmente en un solo lado del cuerpo o la cara.",
+    "sintomas": ["ampollas", "dolor", "ardor", "hormigueo"],
+    "consejo": "Acude al médico en las primeras 72 horas para recibir antivirales. Mantén el sarpullido cubierto para evitar contagiar el virus."
+  },
+  {
+    "id": "13",
+    "nombre": "Escabiosis (Sarna)",
+    "descripcion": "Infestación de la piel causada por un ácaro microscópico. Se transmite por contacto físico prolongado y causa una picazón nocturna desesperante.",
+    "sintomas": ["picazon_nocturna", "sarpullido", "pequenas_protuberancias"],
+    "consejo": "Requiere tratamiento médico recetado (cremas acaricidas) para toda la familia y lavado de toda la ropa de cama con agua caliente."
+  },
+  {
+    "id": "14",
+    "nombre": "Alopecia Areata",
+    "descripcion": "Trastorno autoinmune en el que el sistema inmunológico ataca los folículos pilosos, causando la caída del cabello en parches redondos.",
+    "sintomas": ["caida_cabello", "parches_calvos"],
+    "consejo": "Consulta con un dermatólogo para evaluar tratamientos tópicos o inyecciones que estimulen el crecimiento del cabello."
+  },
+  {
+    "id": "15",
+    "nombre": "Verrugas Vulgares",
+    "descripcion": "Pequeños bultos granulares en la piel causados por el virus del papiloma humano (VPH). Suelen aparecer en manos y dedos.",
+    "sintomas": ["bultos_asperos", "dureza", "puntos_negros"],
+    "consejo": "Evita rasparlas o morderlas para no propagar el virus. Puedes usar tratamientos de farmacia con ácido salicílico o acudir a crioterapia."
+  },
+  {
+    "id": "16",
+    "nombre": "Impétigo",
+    "descripcion": "Infección bacteriana de la piel muy contagiosa que afecta principalmente a niños, formando llagas rojas que luego desarrollan costras amarillentas.",
+    "sintomas": ["llagas_rojas", "costras_miel", "ampollas"],
+    "consejo": "Lava las llagas suavemente con agua y jabón, y aplica una pomada antibiótica. Evita que el paciente se toque la zona afectada."
+  },
+  {
+    "id": "17",
+    "nombre": "Celulitis Infecciosa",
+    "descripcion": "Infección bacteriana profunda de la piel que hace que la zona se vea roja, inflamada y se sienta caliente y dolorosa al tacto.",
+    "sintomas": ["enrojecimiento", "hinchazon", "dolor", "piel_caliente"],
+    "consejo": "Requiere atención médica urgente y tratamiento con antibióticos orales. Eleva la zona afectada para reducir la hinchazón."
+  },
+  {
+    "id": "18",
+    "nombre": "Queratosis Pilaris",
+    "descripcion": "Condición inofensiva donde la queratina forma tapones en los folículos pilosos, dando a la piel un aspecto de 'piel de gallina' áspera.",
+    "sintomas": ["piel_aspera", "protuberancias", "piel_seca"],
+    "consejo": "Exfolia la piel suavemente en la ducha y aplica lociones que contengan urea o ácido láctico para suavizar las protuberancias."
+  },
+  {
+    "id": "19",
+    "nombre": "Acné Vulgar",
+    "descripcion": "Enfermedad de los folículos pilosos y las glándulas sebáceas que produce espinillas, puntos negros y granos inflamados.",
+    "sintomas": ["granos", "puntos_negros", "piel_grasa", "enrojecimiento"],
+    "consejo": "Lava tu rostro dos veces al día con un limpiador suave, evita reventar los granos para prevenir cicatrices y usa productos no comedogénicos."
   }
 ]

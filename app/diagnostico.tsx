@@ -4,6 +4,8 @@ import { View, Text, StyleSheet, Button, ScrollView, TouchableOpacity, TextInput
 import { AppContext } from './context'; 
 // Cargamos nuestra base de datos local (Persistencia JSON)
 import data from '../assets/enfermedades.json'; 
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebaseConfig";
 
 export default function Diagnostico() {
   // --- ESTADOS LOCALES DE LA PANTALLA ---
@@ -46,18 +48,31 @@ export default function Diagnostico() {
   };
 
   // Función para guardar en el estado global
-  const guardarEnHistorial = () => {
+const guardarEnHistorial = async () => {
     if (resultado && resultado.length > 0) {
-      // Agregamos el nuevo registro sin borrar los anteriores (...prev)
+      // 1. Guardado local (lo que ya tenías)
       setHistorial((prev: any) => [
         ...prev, 
         { 
           enfermedades: resultado, 
           comentario, 
-          fecha: new Date().toLocaleDateString() // Fecha automática
+          fecha: new Date().toLocaleDateString()
         }
       ]);
-      alert("¡Diagnóstico y comentario guardados en el historial!");
+
+      // 2. Guardado en la Nube (Lo nuevo)
+      try {
+        await addDoc(collection(db, "historial_diagnosticos"), {
+          enfermedades: resultado, 
+          comentario: comentario, 
+          fecha: new Date().toISOString(), // Usamos formato ISO para que Firebase lo ordene bien
+        });
+        alert("¡Guardado exitosamente en la nube!");
+      } catch (error) {
+        console.error("Error al subir a la nube: ", error);
+        alert("Diagnóstico guardado localmente, pero hubo un error al sincronizar con la nube.");
+      }
+
       setComentario(''); // Limpiamos el input
     }
   };
