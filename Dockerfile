@@ -25,4 +25,4 @@ COPY . .
 EXPOSE 8081
 
 # Comando por defecto para iniciar expo
-CMD ["npx", "expo", "start", "--tunnel"]
+CMD ["npx", "expo", "start", "--lan"]
